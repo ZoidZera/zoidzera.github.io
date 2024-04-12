@@ -5,6 +5,41 @@
     </head>
 
     <style>
+        .button {
+            position: relative;
+            background-color: #04AA6D;
+            border: none;
+            font-size: 28px;
+            color: #FFFFFF;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition-duration: 0.4s;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+            }
+
+        .button:after {
+            content: "";
+            background: #f1f1f1;
+            display: block;
+            position: absolute;
+            padding-top: 300%;
+            padding-left: 350%;
+            margin-left: -20px !important;
+            margin-top: -120%;
+            opacity: 0;
+            transition: all 0.8s
+                }
+
+        .button:active:after {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            transition: 0s
+            }
+
         h1{
             font-size: 50px;
             font-family: verdana;
@@ -24,6 +59,8 @@
         <h1>Tribo Gamer</h1>
         <p>Criei um prototipo de site to muito feliz slk. Tribo gamer é muito foda namoral cês são muito gnt boa tamojunto poha.<br>
         Quero ideias pra colocar aqui só pra treinar. Isso tudo vai ser recreativo, o site em si pode mudar do nada mesmo.</p>
+        <p2>.button</p2>
+        <button class="button">Clique aqui</button>
     </body>
 
 </html>
