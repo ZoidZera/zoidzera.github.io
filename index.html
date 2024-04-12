@@ -6,7 +6,7 @@
 
     <style>
         .button {
-            position: center;
+            position: relative;
             background-color: #04AA6D;
             border: none;
             font-size: 30px;
@@ -65,13 +65,13 @@
         <h1>Tribo Gamer</h1>
         <p>Criei um prototipo de site to muito feliz slk. Tribo gamer é muito foda namoral cês são muito gnt boa tamojunto poha.<br>
         Quero ideias pra colocar aqui só pra treinar. Isso tudo vai ser recreativo, o site em si pode mudar do nada mesmo.</p>
-        <button class="button">Clique aqui</button>
+        <button class="button"; id="demo">Clique aqui</button>
         <p2> Ps: Esse botão demorou pra crlh de fazer</p2>
 
         <script>
-            document.getElementsByClassName("button").onclick = function() {evento()};
+            document.getElementsByClassName("demo").onclick = function() {evento()};
             function evento() {
-                document.getElementsByClassName("button").innerHTML = "O JOGO"
+                document.getElementsByClassName("demo").innerHTML = "O JOGO"
             }
         </script>
     </body>
