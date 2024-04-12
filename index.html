@@ -5,71 +5,42 @@
     </head>
 
     <style>
-        .button {
-            position: relative;
-            background-color: #04AA6D;
-            border: none;
-            font-size: 30px;
-            color: green;
-            padding: 20px;
-            width: 200px;
-            text-align: center;
-            transition-duration: 0.4s;
-            text-decoration: none;
-            overflow: hidden;
-            cursor: pointer;
-            }
-
-        .button:after {
-            content: "";
-            background: #f1f1f1;
-            display: block;
-            position: absolute;
-            padding-top: 300%;
-            padding-left: 350%;
-            margin-left: -20px !important;
-            margin-top: -120%;
-            opacity: 0;
-            transition: all 0.8s
-                }
-
-        .button:active:after {
-            padding: 0;
-            margin: 0;
-            opacity: 1;
-            transition: 0s
-            }
-
         h1{
             font-size: 50px;
-            font-family: verdana;
-            text-align: center;
-            width: 100%;
             }
         
         p{
             font-size: 20px;
-            font-family: verdana;
-            text-align: center;
-            width: 100%;
         }
 
         p2{
-            text-align: center;
-            font-family: verdana;
-            width: 100%;
+           font-size: 50px;
         }
+
+        .central{
+            color: white;
+            text-align: center;
+            border: 2px solid;
+            margin-bottom: 10px;
+            background-color: #424549;
+            padding: 10px;
+            padding-bottom: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
     </style>
 
     <body>
-        <h1>Tribo Gamer</h1>
-        <p>Criei um prototipo de site to muito feliz slk. Tribo gamer é muito foda namoral cês são muito gnt boa tamojunto poha.<br>
-        Quero ideias pra colocar aqui só pra treinar. Isso tudo vai ser recreativo, o site em si pode mudar do nada mesmo.</p>
-        <button class="button" onclick="evento()">Clique aqui</button>
-        <p2> Ps: Esse botão demorou pra crlh de fazer</p2>
+        <div class="central">
+            <h1>Tribo Gamer</h1>
+            <p>Criei um prototipo de site to muito feliz slk. Tribo gamer é muito foda namoral cês são muito gnt boa tamojunto poha.<br>
+            Quero ideias pra colocar aqui só pra treinar. Isso tudo vai ser recreativo, o site em si pode mudar do nada mesmo.</p>        
+            <p2  onclick="this.innerHTML = 'O JOGO'">CLIQUE AQUI</p2>
+            <p3 font-size="10px"><br>Ps: esse botão demorou pra um crlh pra fazer</p3>
+        </div>
+
 
         <script>
-            document.getElementsByClassName("demo").onclick = function() {evento()};
             function evento() {
                 document.getElementsByClassName("demo").innerHTML = "O JOGO";
             }
